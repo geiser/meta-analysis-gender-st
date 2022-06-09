@@ -103,7 +103,7 @@ summary(m.cont)
 forest(m.cont, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/01-flow_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](01-flow_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ### Subgroup analysis by “age”
 
@@ -159,7 +159,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/01-flow_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](01-flow_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 ### Subgroup analysis by “ed.level”
 
@@ -215,7 +215,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/01-flow_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](01-flow_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 ### Subgroup analysis by “intervention”
 
@@ -279,7 +279,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/01-flow_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](01-flow_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ### Subgroup analysis by “age:intervention”
 
@@ -348,7 +348,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/01-flow_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](01-flow_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 ### Subgroup analysis by “ed.level:intervention”
 
@@ -419,7 +419,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/01-flow_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](01-flow_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 ### Subgroup analysis by “age:ed.level:intervention”
 
@@ -490,7 +490,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/01-flow_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](01-flow_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 ## Funnel Plot
 
@@ -511,4 +511,4 @@ summary(eggers.test(x = m.cont))
 funnel(m.cont, xlab = "Hedges' g", studlab = T, legend=T, addtau2 = T)
 ```
 
-![](/01-flow_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](01-flow_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->

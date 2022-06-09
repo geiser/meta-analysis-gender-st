@@ -116,7 +116,7 @@ summary(m.cont)
 forest(m.cont, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ### Subgroup analysis by “country”
 
@@ -173,7 +173,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 ### Subgroup analysis by “age”
 
@@ -230,7 +230,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 ### Subgroup analysis by “ed.level”
 
@@ -288,7 +288,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ### Subgroup analysis by “intervention”
 
@@ -356,7 +356,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 ### Subgroup analysis by “country:age”
 
@@ -416,7 +416,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 ### Subgroup analysis by “country:ed.level”
 
@@ -475,7 +475,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 ### Subgroup analysis by “country:intervention”
 
@@ -548,7 +548,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
 
 ### Subgroup analysis by “age:intervention”
 
@@ -623,7 +623,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
 
 ### Subgroup analysis by “ed.level:intervention”
 
@@ -698,7 +698,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
 
 ### Subgroup analysis by “country:age:intervention”
 
@@ -775,7 +775,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->
 
 ### Subgroup analysis by “country:ed.level:intervention”
 
@@ -852,7 +852,7 @@ summary(m.sg4sub)
 forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-27-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-27-1.png)<!-- -->
 
 ## Funnel Plot
 
@@ -873,4 +873,4 @@ summary(eggers.test(x = m.cont))
 funnel(m.cont, xlab = "Hedges' g", studlab = T, legend=T, addtau2 = T)
 ```
 
-![](/02-perform_files/figure-gfm/unnamed-chunk-29-1.png)<!-- -->
+![](02-perform_files/figure-gfm/unnamed-chunk-29-1.png)<!-- -->
