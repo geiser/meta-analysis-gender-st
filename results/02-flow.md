@@ -114,15 +114,15 @@ summary(m.sg4sub)
 
     ## Review:     Performance in stBoost
     ## 
-    ##                               SMD            95%-CI %W(random)         age
-    ## S1                         0.6017 [ 0.0897; 1.1136]       10.1  adolescent
-    ## S2                         0.0200 [-0.4562; 0.4962]       11.6  adolescent
-    ## S3                        -0.1774 [-0.7134; 0.3587]        9.2  adolescent
-    ## S4                         0.5120 [-0.0442; 1.0682]        8.5       adult
-    ## S5                         0.0845 [-0.3315; 0.5005]       15.3       adult
-    ## S6                         0.3476 [-0.1021; 0.7973]       13.1       adult
-    ## S7                         0.1612 [-0.2355; 0.5580]       16.8       adult
-    ## S10: Only use prompt msgs -0.0106 [-0.4241; 0.4028]       15.4 adolescence
+    ##                               SMD            95%-CI %W(random)        age
+    ## S1                         0.6017 [ 0.0897; 1.1136]       10.1 adolescent
+    ## S2                         0.0200 [-0.4562; 0.4962]       11.6 adolescent
+    ## S3                        -0.1774 [-0.7134; 0.3587]        9.2 adolescent
+    ## S4                         0.5120 [-0.0442; 1.0682]        8.5      adult
+    ## S5                         0.0845 [-0.3315; 0.5005]       15.3      adult
+    ## S6                         0.3476 [-0.1021; 0.7973]       13.1      adult
+    ## S7                         0.1612 [-0.2355; 0.5580]       16.8      adult
+    ## S10: Only use prompt msgs -0.0106 [-0.4241; 0.4028]       15.4 adolescent
     ## 
     ## Number of studies combined: k = 8
     ## Number of observations: o = 597
@@ -139,14 +139,13 @@ summary(m.sg4sub)
     ##  7.67    7  0.3625
     ## 
     ## Results for subgroups (random effects model):
-    ##                     k     SMD            95%-CI  tau^2    tau    Q   I^2
-    ## age = adolescent    3  0.1498 [-0.8478; 1.1473] 0.0917 0.3028 4.71 57.5%
-    ## age = adult         4  0.2406 [-0.0406; 0.5218]      0      0 1.83  0.0%
-    ## age = adolescence   1 -0.0106 [-0.4241; 0.4028]     --     -- 0.00    --
+    ##                    k    SMD            95%-CI  tau^2    tau    Q   I^2
+    ## age = adolescent   4 0.1025 [-0.4182; 0.6233] 0.0397 0.1993 5.10 41.2%
+    ## age = adult        4 0.2406 [-0.0406; 0.5218]      0      0 1.83  0.0%
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value
-    ## Between groups   1.25    2  0.5343
+    ## Between groups   0.55    1  0.4578
     ## 
     ## Details on meta-analytical method:
     ## - Inverse variance method
@@ -307,7 +306,7 @@ summary(m.sg4sub)
     ## S5                             adult:Gender-stereotype color, ranking, badges, and avatar
     ## S6                             adult:Gender-stereotype color, ranking, badges, and avatar
     ## S7                             adult:Gender-stereotype color, ranking, badges, and avatar
-    ## S10: Only use prompt msgs     adolescence:Gender-stereotyped motivational message prompts
+    ## S10: Only use prompt msgs      adolescent:Gender-stereotyped motivational message prompts
     ## 
     ## Number of studies combined: k = 8
     ## Number of observations: o = 597
@@ -327,11 +326,11 @@ summary(m.sg4sub)
     ##                                                          k     SMD            95%-CI  tau^2    tau    Q
     ## age:intervention = adolescent:Gender-stereotype co ...   3  0.1498 [-0.8478; 1.1473] 0.0917 0.3028 4.71
     ## age:intervention = adult:Gender-stereotype color,  ...   4  0.2406 [-0.0406; 0.5218]      0      0 1.83
-    ## age:intervention = adolescence:Gender-stereotyped  ...   1 -0.0106 [-0.4241; 0.4028]     --     -- 0.00
+    ## age:intervention = adolescent:Gender-stereotyped m ...   1 -0.0106 [-0.4241; 0.4028]     --     -- 0.00
     ##                                                          I^2
     ## age:intervention = adolescent:Gender-stereotype co ... 57.5%
     ## age:intervention = adult:Gender-stereotype color,  ...  0.0%
-    ## age:intervention = adolescence:Gender-stereotyped  ...    --
+    ## age:intervention = adolescent:Gender-stereotyped m ...    --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value
@@ -447,7 +446,7 @@ summary(m.sg4sub)
     ## S5                            adult:higher-education:Gender-stereotype color, ranking, badges, and avatar
     ## S6                            adult:higher-education:Gender-stereotype color, ranking, badges, and avatar
     ## S7                                     adult:unknown:Gender-stereotype color, ranking, badges, and avatar
-    ## S10: Only use prompt msgs     adolescence:upper-secundary:Gender-stereotyped motivational message prompts
+    ## S10: Only use prompt msgs      adolescent:upper-secundary:Gender-stereotyped motivational message prompts
     ## 
     ## Number of studies combined: k = 8
     ## Number of observations: o = 597
@@ -468,12 +467,12 @@ summary(m.sg4sub)
     ## age:ed.level:intervention = adolescent:upper-secundary:Gend ...   3  0.1498 [-0.8478; 1.1473] 0.0917 0.3028
     ## age:ed.level:intervention = adult:higher-education:Gender-s ...   3  0.2767 [-0.2494; 0.8028]      0      0
     ## age:ed.level:intervention = adult:unknown:Gender-stereotype ...   1  0.1612 [-0.2355; 0.5580]     --     --
-    ## age:ed.level:intervention = adolescence:upper-secundary:Gen ...   1 -0.0106 [-0.4241; 0.4028]     --     --
+    ## age:ed.level:intervention = adolescent:upper-secundary:Gend ...   1 -0.0106 [-0.4241; 0.4028]     --     --
     ##                                                                    Q   I^2
     ## age:ed.level:intervention = adolescent:upper-secundary:Gend ... 4.71 57.5%
     ## age:ed.level:intervention = adult:higher-education:Gender-s ... 1.60  0.0%
     ## age:ed.level:intervention = adult:unknown:Gender-stereotype ... 0.00    --
-    ## age:ed.level:intervention = adolescence:upper-secundary:Gen ... 0.00    --
+    ## age:ed.level:intervention = adolescent:upper-secundary:Gend ... 0.00    --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value

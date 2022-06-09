@@ -107,7 +107,7 @@ forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = paste0(gen
 ### Subgroup analysis by "age"
 
 ```{r}
-m.sg4sub <- update.meta(m.cont, subgroup = country, random = T, fixed = F)
+m.sg4sub <- update.meta(m.cont, subgroup = age, random = T, fixed = F)
 summary(m.sg4sub)
 ```
 

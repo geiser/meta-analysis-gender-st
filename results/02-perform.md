@@ -178,23 +178,23 @@ forest(m.sg4sub, digits=2, digits.sd = 2, test.overall = T, label.e = cond)
 ### Subgroup analysis by “age”
 
 ``` r
-m.sg4sub <- update.meta(m.cont, subgroup = country, random = T, fixed = F)
+m.sg4sub <- update.meta(m.cont, subgroup = age, random = T, fixed = F)
 summary(m.sg4sub)
 ```
 
     ## Review:     Performance in stBoost
     ## 
-    ##                                    SMD            95%-CI %W(random) country
-    ## S1                              0.0615 [-0.4388; 0.5618]        8.4  Brazil
-    ## S2                             -0.1670 [-0.6440; 0.3101]        9.2  Brazil
-    ## S3                             -0.2975 [-0.8356; 0.2405]        7.2  Brazil
-    ## S4                              0.3656 [-0.1862; 0.9173]        6.9  Brazil
-    ## S5                             -0.0315 [-0.4473; 0.3843]       12.1  Brazil
-    ## S6                              0.2023 [-0.2451; 0.6496]       10.5  Brazil
-    ## S7                              0.2952 [-0.1052; 0.6957]       13.1  Brazil
-    ## S8: Conducted by BNU           -0.1339 [-0.6179; 0.3501]        9.0   China
-    ## S9: Albuquerque, et al. (2017)  0.3264 [-0.0970; 0.7498]       11.7  Brazil
-    ## S10: Only use prompt msgs       0.2641 [-0.1544; 0.6827]       12.0  Brazil
+    ##                                    SMD            95%-CI %W(random)            age
+    ## S1                              0.0615 [-0.4388; 0.5618]        8.4     adolescent
+    ## S2                             -0.1670 [-0.6440; 0.3101]        9.2     adolescent
+    ## S3                             -0.2975 [-0.8356; 0.2405]        7.2     adolescent
+    ## S4                              0.3656 [-0.1862; 0.9173]        6.9          adult
+    ## S5                             -0.0315 [-0.4473; 0.3843]       12.1          adult
+    ## S6                              0.2023 [-0.2451; 0.6496]       10.5          adult
+    ## S7                              0.2952 [-0.1052; 0.6957]       13.1          adult
+    ## S8: Conducted by BNU           -0.1339 [-0.6179; 0.3501]        9.0        unknown
+    ## S9: Albuquerque, et al. (2017)  0.3264 [-0.0970; 0.7498]       11.7 no-restriction
+    ## S10: Only use prompt msgs       0.2641 [-0.1544; 0.6827]       12.0     adolescent
     ## 
     ## Number of studies combined: k = 10
     ## Number of observations: o = 748
@@ -211,13 +211,15 @@ summary(m.sg4sub)
     ##  8.29    9  0.5055
     ## 
     ## Results for subgroups (random effects model):
-    ##                    k     SMD            95%-CI tau^2 tau    Q  I^2
-    ## country = Brazil   9  0.1308 [-0.0390; 0.3007]     0   0 7.24 0.0%
-    ## country = China    1 -0.1339 [-0.6179; 0.3501]    --  -- 0.00   --
+    ##                        k     SMD            95%-CI  tau^2    tau    Q  I^2
+    ## age = adolescent       4 -0.0049 [-0.4065; 0.3967] 0.0082 0.0905 3.23 7.2%
+    ## age = adult            4  0.1906 [-0.0844; 0.4656]      0      0 1.75 0.0%
+    ## age = unknown          1 -0.1339 [-0.6179; 0.3501]     --     -- 0.00   --
+    ## age = no-restriction   1  0.3264 [-0.0970; 0.7498]     --     -- 0.00   --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value
-    ## Between groups   1.06    1  0.3042
+    ## Between groups   3.60    3  0.3076
     ## 
     ## Details on meta-analytical method:
     ## - Inverse variance method
@@ -375,9 +377,9 @@ summary(m.sg4sub)
     ## S5                             -0.0315 [-0.4473; 0.3843]       12.1          Brazil:adult
     ## S6                              0.2023 [-0.2451; 0.6496]       10.5          Brazil:adult
     ## S7                              0.2952 [-0.1052; 0.6957]       13.1          Brazil:adult
-    ## S8: Conducted by BNU           -0.1339 [-0.6179; 0.3501]        9.0  China:no-restriction
+    ## S8: Conducted by BNU           -0.1339 [-0.6179; 0.3501]        9.0         China:unknown
     ## S9: Albuquerque, et al. (2017)  0.3264 [-0.0970; 0.7498]       11.7 Brazil:no-restriction
-    ## S10: Only use prompt msgs       0.2641 [-0.1544; 0.6827]       12.0    Brazil:adolescence
+    ## S10: Only use prompt msgs       0.2641 [-0.1544; 0.6827]       12.0     Brazil:adolescent
     ## 
     ## Number of studies combined: k = 10
     ## Number of observations: o = 748
@@ -394,16 +396,15 @@ summary(m.sg4sub)
     ##  8.29    9  0.5055
     ## 
     ## Results for subgroups (random effects model):
-    ##                                       k     SMD            95%-CI tau^2 tau    Q  I^2
-    ## country:age = Brazil:adolescent       3 -0.1280 [-0.5695; 0.3135]     0   0 0.96 0.0%
-    ## country:age = Brazil:adult            4  0.1906 [-0.0844; 0.4656]     0   0 1.75 0.0%
-    ## country:age = China:no-restriction    1 -0.1339 [-0.6179; 0.3501]    --  -- 0.00   --
-    ## country:age = Brazil:no-restriction   1  0.3264 [-0.0970; 0.7498]    --  -- 0.00   --
-    ## country:age = Brazil:adolescence      1  0.2641 [-0.1544; 0.6827]    --  -- 0.00   --
+    ##                                       k     SMD            95%-CI  tau^2    tau    Q  I^2
+    ## country:age = Brazil:adolescent       4 -0.0049 [-0.4065; 0.3967] 0.0082 0.0905 3.23 7.2%
+    ## country:age = Brazil:adult            4  0.1906 [-0.0844; 0.4656]      0      0 1.75 0.0%
+    ## country:age = China:unknown           1 -0.1339 [-0.6179; 0.3501]     --     -- 0.00   --
+    ## country:age = Brazil:no-restriction   1  0.3264 [-0.0970; 0.7498]     --     -- 0.00   --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value
-    ## Between groups   8.54    4  0.0737
+    ## Between groups   3.60    3  0.3076
     ## 
     ## Details on meta-analytical method:
     ## - Inverse variance method
@@ -578,9 +579,9 @@ summary(m.sg4sub)
     ## S5                                      adult:Gender-stereotype color, ranking, badges, and avatar
     ## S6                                      adult:Gender-stereotype color, ranking, badges, and avatar
     ## S7                                      adult:Gender-stereotype color, ranking, badges, and avatar
-    ## S8: Conducted by BNU           no-restriction:Gender-stereotype color, ranking, badges, and avatar
+    ## S8: Conducted by BNU                  unknown:Gender-stereotype color, ranking, badges, and avatar
     ## S9: Albuquerque, et al. (2017) no-restriction:Gender-stereotype color, ranking, badges, and avatar
-    ## S10: Only use prompt msgs              adolescence:Gender-stereotyped motivational message prompts
+    ## S10: Only use prompt msgs               adolescent:Gender-stereotyped motivational message prompts
     ## 
     ## Number of studies combined: k = 10
     ## Number of observations: o = 748
@@ -597,20 +598,16 @@ summary(m.sg4sub)
     ##  8.29    9  0.5055
     ## 
     ## Results for subgroups (random effects model):
-    ##                                                          k     SMD            95%-CI  tau^2    tau    Q
-    ## age:intervention = adolescent:Gender-stereotype co ...   3 -0.1280 [-0.5695; 0.3135]      0      0 0.96
-    ## age:intervention = adult:Gender-stereotype color,  ...   4  0.1906 [-0.0844; 0.4656]      0      0 1.75
-    ## age:intervention = no-restriction:Gender-stereotyp ...   2  0.1118 [-2.8060; 3.0296] 0.0521 0.2283 1.97
-    ## age:intervention = adolescence:Gender-stereotyped  ...   1  0.2641 [-0.1544; 0.6827]     --     -- 0.00
-    ##                                                          I^2
-    ## age:intervention = adolescent:Gender-stereotype co ...  0.0%
-    ## age:intervention = adult:Gender-stereotype color,  ...  0.0%
-    ## age:intervention = no-restriction:Gender-stereotyp ... 49.2%
-    ## age:intervention = adolescence:Gender-stereotyped  ...    --
+    ##                                                          k     SMD            95%-CI tau^2 tau    Q  I^2
+    ## age:intervention = adolescent:Gender-stereotype co ...   3 -0.1280 [-0.5695; 0.3135]     0   0 0.96 0.0%
+    ## age:intervention = adult:Gender-stereotype color,  ...   4  0.1906 [-0.0844; 0.4656]     0   0 1.75 0.0%
+    ## age:intervention = unknown:Gender-stereotype color ...   1 -0.1339 [-0.6179; 0.3501]    --  -- 0.00   --
+    ## age:intervention = no-restriction:Gender-stereotyp ...   1  0.3264 [-0.0970; 0.7498]    --  -- 0.00   --
+    ## age:intervention = adolescent:Gender-stereotyped m ...   1  0.2641 [-0.1544; 0.6827]    --  -- 0.00   --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value
-    ## Between groups   6.51    3  0.0892
+    ## Between groups   8.54    4  0.0737
     ## 
     ## Details on meta-analytical method:
     ## - Inverse variance method
@@ -728,9 +725,9 @@ summary(m.sg4sub)
     ## S5                                      Brazil:adult:Gender-stereotype color, ranking, badges, and avatar
     ## S6                                      Brazil:adult:Gender-stereotype color, ranking, badges, and avatar
     ## S7                                      Brazil:adult:Gender-stereotype color, ranking, badges, and avatar
-    ## S8: Conducted by BNU            China:no-restriction:Gender-stereotype color, ranking, badges, and avatar
+    ## S8: Conducted by BNU                   China:unknown:Gender-stereotype color, ranking, badges, and avatar
     ## S9: Albuquerque, et al. (2017) Brazil:no-restriction:Gender-stereotype color, ranking, badges, and avatar
-    ## S10: Only use prompt msgs              Brazil:adolescence:Gender-stereotyped motivational message prompts
+    ## S10: Only use prompt msgs               Brazil:adolescent:Gender-stereotyped motivational message prompts
     ## 
     ## Number of studies combined: k = 10
     ## Number of observations: o = 748
@@ -750,15 +747,15 @@ summary(m.sg4sub)
     ##                                                                  k     SMD            95%-CI tau^2 tau    Q
     ## country:age:intervention = Brazil:adolescent:Gender-stereo ...   3 -0.1280 [-0.5695; 0.3135]     0   0 0.96
     ## country:age:intervention = Brazil:adult:Gender-stereotype  ...   4  0.1906 [-0.0844; 0.4656]     0   0 1.75
-    ## country:age:intervention = China:no-restriction:Gender-ste ...   1 -0.1339 [-0.6179; 0.3501]    --  -- 0.00
+    ## country:age:intervention = China:unknown:Gender-stereotype ...   1 -0.1339 [-0.6179; 0.3501]    --  -- 0.00
     ## country:age:intervention = Brazil:no-restriction:Gender-st ...   1  0.3264 [-0.0970; 0.7498]    --  -- 0.00
-    ## country:age:intervention = Brazil:adolescence:Gender-stere ...   1  0.2641 [-0.1544; 0.6827]    --  -- 0.00
+    ## country:age:intervention = Brazil:adolescent:Gender-stereo ...   1  0.2641 [-0.1544; 0.6827]    --  -- 0.00
     ##                                                                 I^2
     ## country:age:intervention = Brazil:adolescent:Gender-stereo ... 0.0%
     ## country:age:intervention = Brazil:adult:Gender-stereotype  ... 0.0%
-    ## country:age:intervention = China:no-restriction:Gender-ste ...   --
+    ## country:age:intervention = China:unknown:Gender-stereotype ...   --
     ## country:age:intervention = Brazil:no-restriction:Gender-st ...   --
-    ## country:age:intervention = Brazil:adolescence:Gender-stere ...   --
+    ## country:age:intervention = Brazil:adolescent:Gender-stereo ...   --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value
