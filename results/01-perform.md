@@ -525,14 +525,14 @@ summary(m.sg4sub)
     ##  12.68    9  0.1775
     ## 
     ## Results for subgroups (random effects model):
-    ##                                                              k     SMD            95%-CI  tau^2    tau     Q
-    ## country:intervention = Brazil:Gender-stereotype color, ...   8 -0.0546 [-0.3105; 0.2013] 0.0377 0.1942 11.58
-    ## country:intervention = China:Gender-stereotype color,  ...   1  0.1809 [-0.3141; 0.6759]     --     --  0.00
-    ## country:intervention = Brazil:Gender-stereotyped motiv ...   1 -0.1663 [-0.5939; 0.2614]     --     --  0.00
-    ##                                                              I^2
-    ## country:intervention = Brazil:Gender-stereotype color, ... 39.6%
-    ## country:intervention = China:Gender-stereotype color,  ...    --
-    ## country:intervention = Brazil:Gender-stereotyped motiv ...    --
+    ##                                                              k     SMD            95%-CI  tau^2    tau
+    ## country:intervention = Brazil:Gender-stereotype color, ...   8 -0.0546 [-0.3105; 0.2013] 0.0377 0.1942
+    ## country:intervention = China:Gender-stereotype color,  ...   1  0.1809 [-0.3141; 0.6759]     --     --
+    ## country:intervention = Brazil:Gender-stereotyped motiv ...   1 -0.1663 [-0.5939; 0.2614]     --     --
+    ##                                                                Q   I^2
+    ## country:intervention = Brazil:Gender-stereotype color, ... 11.58 39.6%
+    ## country:intervention = China:Gender-stereotype color,  ...  0.00    --
+    ## country:intervention = Brazil:Gender-stereotyped motiv ...  0.00    --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value
@@ -673,16 +673,16 @@ summary(m.sg4sub)
     ##  12.68    9  0.1775
     ## 
     ## Results for subgroups (random effects model):
-    ##                                                               k     SMD            95%-CI  tau^2    tau    Q
-    ## ed.level:intervention = upper-secundary:Gender-stereoty ...   3 -0.1887 [-0.8543; 0.4770] 0.0191 0.1382 2.43
-    ## ed.level:intervention = higher-education:Gender-stereot ...   3  0.1507 [-0.3279; 0.6294]      0      0 1.20
-    ## ed.level:intervention = unknown:Gender-stereotype color ...   3 -0.0353 [-1.0048; 0.9342] 0.1022 0.3197 6.04
-    ## ed.level:intervention = upper-secundary:Gender-stereoty ...   1 -0.1663 [-0.5939; 0.2614]     --     -- 0.00
-    ##                                                               I^2
-    ## ed.level:intervention = upper-secundary:Gender-stereoty ... 17.8%
-    ## ed.level:intervention = higher-education:Gender-stereot ...  0.0%
-    ## ed.level:intervention = unknown:Gender-stereotype color ... 66.9%
-    ## ed.level:intervention = upper-secundary:Gender-stereoty ...    --
+    ##                                                               k     SMD            95%-CI  tau^2    tau
+    ## ed.level:intervention = upper-secundary:Gender-stereoty ...   3 -0.1887 [-0.8543; 0.4770] 0.0191 0.1382
+    ## ed.level:intervention = higher-education:Gender-stereot ...   3  0.1507 [-0.3279; 0.6294]      0      0
+    ## ed.level:intervention = unknown:Gender-stereotype color ...   3 -0.0353 [-1.0048; 0.9342] 0.1022 0.3197
+    ## ed.level:intervention = upper-secundary:Gender-stereoty ...   1 -0.1663 [-0.5939; 0.2614]     --     --
+    ##                                                                Q   I^2
+    ## ed.level:intervention = upper-secundary:Gender-stereoty ... 2.43 17.8%
+    ## ed.level:intervention = higher-education:Gender-stereot ... 1.20  0.0%
+    ## ed.level:intervention = unknown:Gender-stereotype color ... 6.04 66.9%
+    ## ed.level:intervention = upper-secundary:Gender-stereoty ... 0.00    --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value

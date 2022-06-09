@@ -464,16 +464,16 @@ summary(m.sg4sub)
     ##  11.83    7  0.1063
     ## 
     ## Results for subgroups (random effects model):
-    ##                                                                   k     SMD             95%-CI  tau^2    tau
-    ## age:ed.level:intervention = adolescent:upper-secundary:Gend ...   3  0.1247 [-0.6949;  0.9444] 0.0403 0.2008
-    ## age:ed.level:intervention = adult:higher-education:Gender-s ...   3  0.2748 [ 0.1118;  0.4377]      0      0
-    ## age:ed.level:intervention = adult:unknown:Gender-stereotype ...   1  0.3025 [-0.1003;  0.7053]     --     --
-    ## age:ed.level:intervention = adolescence:upper-secundary:Gen ...   1 -0.4296 [-0.8583; -0.0010]     --     --
-    ##                                                                    Q   I^2
-    ## age:ed.level:intervention = adolescent:upper-secundary:Gend ... 3.43 41.7%
-    ## age:ed.level:intervention = adult:higher-education:Gender-s ... 0.14  0.0%
-    ## age:ed.level:intervention = adult:unknown:Gender-stereotype ... 0.00    --
-    ## age:ed.level:intervention = adolescence:upper-secundary:Gen ... 0.00    --
+    ##                                                                   k     SMD             95%-CI  tau^2
+    ## age:ed.level:intervention = adolescent:upper-secundary:Gend ...   3  0.1247 [-0.6949;  0.9444] 0.0403
+    ## age:ed.level:intervention = adult:higher-education:Gender-s ...   3  0.2748 [ 0.1118;  0.4377]      0
+    ## age:ed.level:intervention = adult:unknown:Gender-stereotype ...   1  0.3025 [-0.1003;  0.7053]     --
+    ## age:ed.level:intervention = adolescence:upper-secundary:Gen ...   1 -0.4296 [-0.8583; -0.0010]     --
+    ##                                                                    tau    Q   I^2
+    ## age:ed.level:intervention = adolescent:upper-secundary:Gend ... 0.2008 3.43 41.7%
+    ## age:ed.level:intervention = adult:higher-education:Gender-s ...      0 0.14  0.0%
+    ## age:ed.level:intervention = adult:unknown:Gender-stereotype ...     -- 0.00    --
+    ## age:ed.level:intervention = adolescence:upper-secundary:Gen ...     -- 0.00    --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                      Q d.f. p-value

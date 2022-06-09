@@ -393,16 +393,16 @@ summary(m.sg4sub)
     ##  7.67    7  0.3625
     ## 
     ## Results for subgroups (random effects model):
-    ##                                                               k     SMD            95%-CI  tau^2    tau    Q
-    ## ed.level:intervention = upper-secundary:Gender-stereoty ...   3  0.1498 [-0.8478; 1.1473] 0.0917 0.3028 4.71
-    ## ed.level:intervention = higher-education:Gender-stereot ...   3  0.2767 [-0.2494; 0.8028]      0      0 1.60
-    ## ed.level:intervention = unknown:Gender-stereotype color ...   1  0.1612 [-0.2355; 0.5580]     --     -- 0.00
-    ## ed.level:intervention = upper-secundary:Gender-stereoty ...   1 -0.0106 [-0.4241; 0.4028]     --     -- 0.00
-    ##                                                               I^2
-    ## ed.level:intervention = upper-secundary:Gender-stereoty ... 57.5%
-    ## ed.level:intervention = higher-education:Gender-stereot ...  0.0%
-    ## ed.level:intervention = unknown:Gender-stereotype color ...    --
-    ## ed.level:intervention = upper-secundary:Gender-stereoty ...    --
+    ##                                                               k     SMD            95%-CI  tau^2    tau
+    ## ed.level:intervention = upper-secundary:Gender-stereoty ...   3  0.1498 [-0.8478; 1.1473] 0.0917 0.3028
+    ## ed.level:intervention = higher-education:Gender-stereot ...   3  0.2767 [-0.2494; 0.8028]      0      0
+    ## ed.level:intervention = unknown:Gender-stereotype color ...   1  0.1612 [-0.2355; 0.5580]     --     --
+    ## ed.level:intervention = upper-secundary:Gender-stereoty ...   1 -0.0106 [-0.4241; 0.4028]     --     --
+    ##                                                                Q   I^2
+    ## ed.level:intervention = upper-secundary:Gender-stereoty ... 4.71 57.5%
+    ## ed.level:intervention = higher-education:Gender-stereot ... 1.60  0.0%
+    ## ed.level:intervention = unknown:Gender-stereotype color ... 0.00    --
+    ## ed.level:intervention = upper-secundary:Gender-stereoty ... 0.00    --
     ## 
     ## Test for subgroup differences (random effects model):
     ##                     Q d.f. p-value
